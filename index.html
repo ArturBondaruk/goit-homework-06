@@ -49,7 +49,19 @@
             </ul>
         </address>
 
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="hmbr-menu" width="32" height="22">
+            <use href="./images/icons.svg#icon-menuhamburger"></use>
+          </svg>
+        </button>
 
+
+      </div>
+    </header>
 
         </div>
     </header>
@@ -59,7 +71,7 @@
       <div class="menu-container js-menu-container" id="mobile-menu">
         <button class="menu-toggle js-close-menu">
           <svg class="mobile-modal-button-icon" width="8" height="8">
-            <use href="./images/icons.svg#icon-close"></use>
+            <use href="./images/icons.svg#icon-closeblack"></use>
           </svg>
         </button>
 
@@ -183,13 +195,22 @@
             <h2 class="intent-title">What are we doing</h2>
             <ul class="intent-socials list">
                 <li class="intent-list"> 
+                  <picture>
+                    <source srcset="./images/img1.jpg 1x, ./images/img1@2x.jpeg 2x" />                 
                     <img src="./images/img1.jpg" alt="computer" width="360" />
-                </li>
+                 </picture>
+                  </li>
                 <li class="intent-list">
+                  <picture>
+                    <source srcset="./images/img2.jpg 1x, ./images/img2@2x.jpeg 2x" />  
                     <img src="./images/img2.jpg" alt="messenger" width="360" />
+                  </picture>
                 </li>
                 <li class="intent-list">
+                  <picture>
+                    <source srcset="./images/img3.jpg 1x, ./images/img3@2x.jpeg 2x" />  
                     <img src="./images/img3.jpg" alt="phone" width="360"  />
+                  </picture>
                 </li>
             </ul>
         </div>
@@ -204,10 +225,15 @@
        
         <ul class="team-social list">
             <li class="team-list">
+              <picture>
+                <source srcset="
+                ./images/secman1.jpg 1x, 
+                ./images/secman1@2x.jpg 2x," />
                     <img class="img"
                         src="./images/secman1.jpg" 
                         alt="Mark Guerrero"
                         width="264" />
+               </picture>
                     <div class="team-name-container">
                         <h3 class="team-title-name">Mark Guerrero</h3>
                         <p class="team-text">Product Designer</p>
@@ -246,10 +272,15 @@
             </li>
 
             <li class="team-list">
+              <picture>
+              <source srcset="
+                ./images/secman2.jpg 1x, 
+                ./images/secman2@2x.jpg 2x," />
                     <img 
                         src="./images/secman2.jpg"
                         alt="Tom Ford"
                         width="264" />
+                </picture>
                    <div class="team-name-container">
                         <h3 class="team-title-name">Tom Ford</h3>
                         <p class="team-text">Frontend Developer</p>
@@ -288,10 +319,15 @@
             </li>
 
             <li class="team-list">
+              <picture>
+              <source srcset="
+                ./images/secman3.jpg 1x, 
+                ./images/secman3@2x.jpg 2x," />
                     <img 
                         src="./images/secman3.jpg"
                         alt="Camila Garcia"
                         width="264" />
+              </picture>
                     <div class="team-name-container">
                         <h3 class="team-title-name">Camila Garcia</h3>
                         <p class="team-text">Marketing</p>
@@ -329,11 +365,16 @@
                
             </li>
 
-            <li class="team-list">                   
+            <li class="team-list">   
+              <picture>
+              <source srcset="
+                ./images/secman4.jpg 1x, 
+                ./images/secman4@2x.jpg 2x," />                
                  <img 
                         src="./images/secman4.jpg"
                         alt="Daniel Wilson"
                         width="264" />
+              </picture>
                <div class="team-name-container">
                         <h3 class="team-title-name">Daniel Wilson</h3>
                         <p class="team-text">UI Designer</p>
@@ -584,6 +625,7 @@
     </div>  
 </div>
 
+<script src="./js/mobile-menu.js"></script>
 <script src="./js/modal.js"></script>
 </body>
 
